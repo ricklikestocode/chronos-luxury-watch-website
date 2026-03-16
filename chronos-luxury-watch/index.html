@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chronos Luxury Watch</title>
+  <link rel="stylesheet" href="style_clean.css">
+  <link rel="stylesheet" href="style_luxury_enhancements.css">
+</head>
+<body>
+  <div class="preloader" aria-hidden="true">
+
+    <div class="crafting-title" id="crafting-text">
+      <span class="crafting-letter">C</span>
+      <span class="crafting-letter">R</span>
+      <span class="crafting-letter">A</span>
+      <span class="crafting-letter">F</span>
+      <span class="crafting-letter">T</span>
+      <span class="crafting-letter">I</span>
+      <span class="crafting-letter">N</span>
+      <span class="crafting-letter">G</span>
+      <span class="crafting-space">&nbsp;</span>
+      <span class="crafting-letter">T</span>
+      <span class="crafting-letter">I</span>
+      <span class="crafting-letter">M</span>
+      <span class="crafting-letter">E</span>
+    </div>
+
+    <div class="chronos-word" aria-label="CHRONOS">
+      <span class="chronos-letter">C</span>
+      <span class="chronos-letter">H</span>
+      <span class="chronos-letter">R</span>
+      <span class="chronos-letter">O</span>
+      <span class="chronos-letter">N</span>
+      <span class="chronos-letter">O</span>
+      <span class="chronos-letter">S</span>
+    </div>
+  </div>
+
+  <nav class="navbar">
+    <div class="navbar-container">
+      <div class="logo" onclick="window.location.href='index.html'">CHRONOS</div>
+      <ul class="nav-links">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="scroll-progress"></div>
+
+  <section id="hero" class="hero">
+    <video autoplay muted loop playsinline class="hero-video">
+     
+      <source src="assets/videos/hero-bg.mp4" type="video/mp4">
+      
+    </video>
+    <!-- <div class="luxury-hero-gradient-overlay"></div>
+    <div class="gold-tint-overlay"></div>
+    <div class="hero-overlay"></div> -->
+    <div class="hero-background-light"></div>
+    <div class="hero-dial-texture"></div>
+
+    <div class="container hero-content">
+      <p class="hero-tagline">CRAFTING TIME</p>
+      <h1 class="hero-title">CHRONOS</h1>
+
+      <div class="hero-description">
+        <p>Chronos is built around balance, restraint, and uncompromising mechanical exactness.</p>
+        <p>Every bridge, wheel, spring, and jewel is composed to express engineering mastery with calm visual precision.</p>
+        <p>A timepiece conceived to embody craftsmanship, timeless elegance, and the discipline of Swiss horology.</p>
+      </div>
+
+      <div class="hero-actions">
+        <button class="cta" onclick="scrollToSection('collection')">Explore Collection</button>
+        <button class="secondary" onclick="scrollToSection('movement')">Discover Movement</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="craft" class="chronos-philosophy">
+    <h2 class="philosophy-title">The Chronos Philosophy</h2>
+    <h3 class="philosophy-subtitle">Where Engineering Meets Art</h3>
+    <div class="philosophy-image-container">
+      <img src="assets/images/hero-watch.jpg" alt="Chronos Philosophy Hero Watch" class="philosophy-hero-img" loading="lazy">
+    </div>
+    <div class="philosophy-text">
+      <p>Chronos expresses the discipline of mechanical watchmaking through proportion, material integrity, and precision architecture. Each component exists for a reason, and each surface is shaped to support the stability, accuracy, and longevity of the movement.</p>
+    </div>
+  </section>
+
+  <section class="viewer-section">
+    <div class="container">
+      <h2 class="section-title">Mechanism Viewer</h2>
+      <p class="section-sub">Observe the movement in composed detail</p>
+      <div class="watch-viewer">
+        <img src="assets/images/mechanics.jpg" id="watch-3d" class="product-image" alt="Chronos mechanism viewer" loading="lazy">
+      </div>
+      <div class="mechanism-content reveal-on-scroll">
+        <h3 class="mechanism-title">Mechanical Movement Architecture</h3>
+        <p>A mechanical watch movement is a living system of springs, gears, and balance wheels working in perfect synchronization. Each gear tooth transfers controlled energy through the movement, regulating time with extraordinary precision. The Chronos movement reveals the discipline of mechanical engineering — where friction, geometry, and material science combine to produce accuracy that lasts generations.</p>
+        <p>The exposed mechanism allows observers to appreciate the harmony of rotating wheels, jewel bearings, and the oscillating balance spring — the heart of the watch.</p>
+      </div>
+      <p class="viewer-note">Mechanical architecture rendered with quiet precision</p>
+    </div>
+  </section>
+
+  <section id="movement" class="movement-section">
+    <div class="container">
+      <h2 class="section-title">Movement Components</h2>
+      <p class="section-sub">The essential systems behind every measured second</p>
+
+      <div class="movement-grid">
+        <div class="movement-card" onclick="window.location.href='gear.html'">
+          <h3>Gear Train</h3>
+          <p>Transfers stored energy through finely calculated ratios to regulate motion across the calibre.</p>
+        </div>
+
+        <div class="movement-card" onclick="window.location.href='balance.html'">
+          <h3>Balance Wheel</h3>
+          <p>The oscillating heart of the movement, maintaining rhythm, stability, and timing precision.</p>
+        </div>
+
+        <div class="movement-card" onclick="window.location.href='escapement.html'">
+          <h3>Escapement</h3>
+          <p>Releases energy in exact increments, converting stored force into disciplined mechanical timekeeping.</p>
+        </div>
+
+        <div class="movement-card" onclick="window.location.href='mainspring.html'">
+          <h3>Mainspring</h3>
+          <p>Stores the power reserve and drives the movement through a gradual, controlled unwinding cycle.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="mechanical-gallery" class="mechanical-gallery">
+    <div class="container">
+      <h2 class="section-title">Mechanical Gallery</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="assets/images/gallery1.jpg" alt="Chronos watch detail" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="assets/images/gallery2.jpg" alt="Chronos dial close-up" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="assets/images/gallery3.jpg" alt="Chronos case design" loading="lazy">
+        </div>
+        <div class="gallery-item">
+          <img src="assets/images/gallery4.jpg" alt="Chronos movement detail" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="specs" class="specs-section">
+    <div class="container">
+      <h2 class="section-title">Engineering Specifications</h2>
+      <div class="grid grid-3 specs-grid">
+        <div class="spec-card">
+          <div class="spec-number"><span class="counter-value" data-target="210">0</span>+</div>
+          <div class="spec-label">Components</div>
+        </div>
+        <div class="spec-card">
+          <div class="spec-number"><span class="counter-value" data-target="32">0</span></div>
+          <div class="spec-label">Jewels</div>
+        </div>
+        <div class="spec-card">
+          <div class="spec-number"><span class="counter-value" data-target="72">0</span></div>
+          <div class="spec-label">Hour Reserve</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials-section">
+    <div class="container">
+      <h2 class="section-title">Testimonials</h2>
+      <div class="testimonials">
+        <div class="testimonial-track">
+          <div class="testimonial-card">
+            <blockquote>"A study in restraint and precision. The movement architecture is exceptional."</blockquote>
+            <cite>— Collector, Geneva</cite>
+          </div>
+          <div class="testimonial-card">
+            <blockquote>"Chronos communicates engineering mastery without spectacle. That is true luxury."</blockquote>
+            <cite>— Horology Consultant</cite>
+          </div>
+          <div class="testimonial-card">
+            <blockquote>"Every proportion, finish, and oscillation reflects thoughtful mechanical discipline."</blockquote>
+            <cite>— Independent Watch Specialist</cite>
+          </div>
+          <div class="testimonial-card">
+            <blockquote>"A study in restraint and precision. The movement architecture is exceptional."</blockquote>
+            <cite>— Collector, Geneva</cite>
+          </div>
+          <div class="testimonial-card">
+            <blockquote>"Chronos communicates engineering mastery without spectacle. That is true luxury."</blockquote>
+            <cite>— Horology Consultant</cite>
+          </div>
+          <div class="testimonial-card">
+            <blockquote>"Every proportion, finish, and oscillation reflects thoughtful mechanical discipline."</blockquote>
+            <cite>— Independent Watch Specialist</cite>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="collection" class="collection-section">
+    <div class="container">
+      <h2 class="section-title">Chronos Collection</h2>
+      <p class="section-sub">Three expressions of contemporary mechanical luxury</p>
+
+      <div class="grid grid-3 collection-grid">
+        <div class="card">
+          <div class="collection-image-wrap">
+            <img src="assets/images/hero-watch.jpg" class="product-image" alt="Chronos Gold" loading="lazy">
+          </div>
+          <h3>Chronos Gold</h3>
+          <p>Warm precious tones, polished architecture, and composed visual depth.</p>
+        </div>
+
+        <div class="card">
+          <div class="collection-image-wrap">
+            <img src="assets/images/watch-silver.jpg" class="product-image" alt="Chronos Silver" loading="lazy">
+          </div>
+          <h3>Chronos Silver</h3>
+          <p>Refined metallic clarity with balanced detailing and a precise mechanical presence.</p>
+        </div>
+
+        <div class="card">
+          <div class="collection-image-wrap">
+            <img src="assets/images/watch-black.jpg" class="product-image" alt="Chronos Black" loading="lazy">
+          </div>
+          <h3>Chronos Black</h3>
+          <p>A restrained interpretation of luxury with modern contrast and understated confidence.</p>
+        </div>
+      </div>
+      <div class="collection-actions reveal-on-scroll" style="text-align: center; margin-top: 60px;">
+        <button class="secondary" onclick="window.location.href='collection.html'">See More</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <h2 class="section-title">Experience Chronos</h2>
+      <p>Precision engineered luxury, shaped for collectors who value timeless mechanical craftsmanship.</p>
+      <button class="cta" onclick="scrollToSection('hero')">Explore Now</button>
+    </div>
+  </section>
+
+  <section class="crafter-entry">
+    <a href="about.html" class="crafter-button">
+      ABOUT THE CRAFTER
+    </a>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-info">
+        <p>Email: <a href="mailto:rutwiksharma.1@gmail.com">rutwiksharma.1@gmail.com</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-logo">CHRONOS</div>
+    <p>© 2026 Chronos Watch Company</p>
+    <p>Precision engineered luxury timepieces.</p>
+    <div class="footer-credit">
+      <p>Crafted by Rutwik Vadali</p>
+      <a href="https://linkedin.com/in/rutwikvadali" target="_blank" class="linkedin-link">https://linkedin.com/in/rutwikvadali</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/scroll-counters.js"></script>
+  <script src="js/luxury-animations.js"></script>
+  <script>
+    function scrollToSection(id) {
+      const section = document.getElementById(id);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  </script>
+</body>
+</html>

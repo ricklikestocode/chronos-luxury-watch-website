@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Chronos Collection</title>
+
+<link rel="stylesheet" href="style_clean.css">
+
+<style>
+
+/* ===============================
+COLLECTION PAGE STYLES
+=============================== */
+
+.collection-page{
+
+min-height:100vh;
+
+display:flex;
+
+align-items:center;
+justify-content:center;
+
+padding-top:140px;
+
+background:#050505;
+
+color:white;
+
+}
+
+.collection-box{
+
+max-width:700px;
+
+background:#0d0d0d;
+
+padding:60px;
+
+border-radius:12px;
+
+box-shadow:0 40px 80px rgba(0,0,0,.8);
+
+text-align:center;
+
+}
+
+.collection-box h1{
+
+font-size:48px;
+
+margin-bottom:20px;
+
+letter-spacing:2px;
+
+}
+
+.collection-box p{
+
+opacity:.75;
+
+font-size:18px;
+
+line-height:1.8;
+
+margin-top:14px;
+
+}
+
+.collection-box button{
+
+margin-top:40px;
+
+padding:14px 36px;
+
+border:none;
+
+background:white;
+
+color:black;
+
+cursor:pointer;
+
+border-radius:4px;
+
+transition:.3s;
+
+font-size:16px;
+
+}
+
+.collection-box button:hover{
+
+transform:translateY(-3px);
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+
+<!-- ===============================
+NAVBAR
+=============================== -->
+
+<nav class="navbar">
+
+<div class="navbar-container">
+
+<div class="logo">
+CHRONOS
+</div>
+
+<ul class="nav-links">
+
+<li><button onclick="goHome()">Home</button></li>
+
+<li><button onclick="goHome()">Craft</button></li>
+
+<li><button onclick="goHome()">Engineering</button></li>
+
+<li><button onclick="goHome()">Movement</button></li>
+
+<li><button onclick="goHome()">Gallery</button></li>
+
+<li><button onclick="goHome()">Contact</button></li>
+
+</ul>
+
+</div>
+
+</nav>
+
+<div class="scroll-progress"></div>
+
+
+
+<!-- ===============================
+COLLECTION PAGE CONTENT
+=============================== -->
+
+<section class="collection-page">
+
+<div class="collection-box">
+
+<h1>
+
+Chronos Collection
+
+</h1>
+
+<p>
+  <strong>Note:</strong> This isn't a real web this is a sample web by Rutwik Vadali and can't use real pics due to copyright issues.
+</p>
+
+<p>
+  This website is a demonstration project created to showcase a luxury watch website interface.
+</p>
+
+<p>
+
+Due to copyright and licensing restrictions,
+real brand collections, product catalogs,
+and commercial assets cannot be displayed here.
+
+</p>
+
+<p>
+
+The Chronos website represents a conceptual
+luxury watch brand built purely for
+educational and portfolio purposes.
+
+</p>
+
+<p>
+
+All imagery, layouts, animations and interactions
+demonstrate modern frontend development techniques
+such as cinematic scrolling, product storytelling
+and luxury UI design.
+
+</p>
+
+<button onclick="goHome()">
+
+Return to Homepage
+
+</button>
+
+</div>
+
+</section>
+
+
+
+<!-- ===============================
+FOOTER
+=============================== -->
+
+<footer>
+
+<div class="footer-logo">
+
+CHRONOS
+
+</div>
+
+<p>
+
+© 2026 Chronos Watch Company
+
+</p>
+
+<p>
+
+Concept luxury watch brand created for
+demonstration and portfolio purposes.
+
+</p>
+
+
+
+<div class="credits">
+
+<p>
+
+Crafted by <span>Rutwik Vadali</span>
+
+</p>
+
+<p class="credit-role">
+
+An enthusiastic web developer
+
+</p>
+
+<p class="credit-email">
+
+rutwiksharma.1@gmail.com
+
+</p>
+
+</div>
+
+</footer>
+
+
+
+<!-- ===============================
+SCRIPTS
+=============================== -->
+
+<script src="js/main.js"></script>
+<script src="js/scrollanimations.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/viewer.js"></script>
+<script src="js/animations.js"></script>
+
+
+
+<script>
+
+function goHome(){
+
+window.location.href = "index.html"
+
+}
+
+</script>
+
+
+
+</body>
+
+</html>

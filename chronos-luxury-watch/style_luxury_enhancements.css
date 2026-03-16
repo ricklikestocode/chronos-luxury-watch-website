@@ -1,0 +1,81 @@
+/* Luxury Cinematic Enhancements */
+
+/* 1. Hero Background Video Enhancement */
+.luxury-video-enhanced {
+    filter: brightness(0.65) contrast(1.2) blur(1px);
+    transform: scale(1);
+    animation: luxuryHeroZoom 22s linear infinite alternate !important;
+}
+
+@keyframes luxuryHeroZoom {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.12);
+    }
+}
+
+.luxury-hero-gradient-overlay {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.7) 100%),
+                linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, transparent 20%, transparent 80%, rgba(0,0,0,0.8) 100%);
+    z-index: -1;
+    pointer-events: none;
+}
+
+.gold-tint-overlay {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 10% 10%, rgba(212, 175, 55, 0.05) 0%, transparent 40%),
+                radial-gradient(circle at 90% 90%, rgba(212, 175, 55, 0.05) 0%, transparent 40%);
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* 2. Scroll Experience */
+.reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+}
+
+.reveal-on-scroll.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 3. Mechanical Design Details */
+.mechanical-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" opacity="0.02"><circle cx="50" cy="50" r="40" stroke="%23D4AF37" stroke-width="1" fill="none" stroke-dasharray="2,2"/><circle cx="50" cy="50" r="30" stroke="%23D4AF37" stroke-width="0.5" fill="none"/></svg>');
+    pointer-events: none;
+    z-index: -5;
+    opacity: 0.3;
+}
+
+.gold-accent-line {
+    width: 60px;
+    height: 1px;
+    background: var(--gold-base);
+    margin: 20px auto;
+    opacity: 0.6;
+    box-shadow: 0 0 8px rgba(212, 175, 55, 0.4);
+}
+
+/* Mechanical Textures */
+.mechanical-texture-overlay {
+    position: absolute;
+    inset: 0;
+    background-image: url('assets/textures/watch-dial.png'); /* Reusing existing asset */
+    background-size: 400px;
+    opacity: 0.03;
+    pointer-events: none;
+    mix-blend-mode: overlay;
+}

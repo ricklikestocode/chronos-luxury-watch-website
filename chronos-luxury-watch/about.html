@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About the Crafter — Chronos</title>
+  <link rel="stylesheet" href="style_clean.css">
+  <link rel="stylesheet" href="style_luxury_enhancements.css">
+  <style>
+    :root {
+      --serif-font: "Didot", "Bodoni MT", "Noto Serif Display", "Urw Palladio L", P052, Sylfaen, serif;
+      --sans-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      background: #000000;
+      color: #d9d9d9;
+      overflow-x: hidden;
+    }
+
+    /* Storytelling Sections */
+    .story-section {
+      min-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 120px 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    .story-content {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .story-title {
+      font-family: var(--serif-font);
+      font-size: clamp(40px, 6vw, 72px);
+      margin-bottom: 20px;
+      letter-spacing: 0.05em;
+      color: #ffffff;
+      line-height: 1.1;
+    }
+
+    .story-subtitle {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.5em;
+      color: #d4af37;
+      margin-bottom: 20px;
+      display: block;
+    }
+
+    .creator-label {
+      font-size: 18px;
+      color: #d4af37;
+      margin-bottom: 40px;
+      letter-spacing: 0.1em;
+      font-family: var(--sans-font);
+    }
+
+    .story-text p {
+      margin-bottom: 30px;
+      font-size: 19px;
+      line-height: 1.9;
+      opacity: 0.85;
+      font-family: var(--sans-font);
+      text-align: center;
+    }
+
+    /* Dividers */
+    .luxury-divider {
+      width: 100px;
+      height: 1px;
+      background: linear-gradient(to right, transparent, #d4af37, transparent);
+      margin: 0 auto;
+      opacity: 0.4;
+    }
+
+    .mechanical-motif {
+      width: 40px;
+      height: 40px;
+      margin: 40px auto;
+      opacity: 0.3;
+      border: 1px solid #d4af37;
+      transform: rotate(45deg);
+    }
+
+    /* Scroll animations */
+    .reveal-on-scroll {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .reveal-on-scroll.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Specific Section Adjustments */
+    #intro {
+      min-height: 100vh;
+      padding-top: 180px;
+    }
+
+    .nav-links li.active a {
+      color: #d4af37 !important;
+    }
+
+    .back-to-chronos {
+      margin-top: 60px;
+      display: inline-block;
+    }
+
+    .back-button {
+      display: inline-block;
+      padding: 14px 40px;
+      border: 1px solid #d4af37;
+      color: #d4af37;
+      text-decoration: none;
+      letter-spacing: 2px;
+      border-radius: 30px;
+      transition: all 0.4s ease;
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+
+    .back-button:hover {
+      background: #d4af37;
+      color: black;
+      box-shadow: 0 0 20px rgba(212, 175, 55, 0.6);
+    }
+
+    .linkedin-link {
+      color: #d4af37;
+      text-decoration: none;
+      font-size: 18px;
+      letter-spacing: 1px;
+      border-bottom: 1px solid transparent;
+      transition: all 0.3s ease;
+      margin-bottom: 40px;
+      display: inline-block;
+    }
+
+    .linkedin-link:hover {
+      border-bottom-color: #d4af37;
+      text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+    }
+
+    footer {
+      padding: 100px 0;
+      text-align: center;
+      background: #000;
+      border-top: 1px solid rgba(212, 175, 55, 0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-container">
+      <div class="logo" onclick="window.location.href='index.html'">CHRONOS</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="about.html">About</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <!-- SECTION 1: INTRODUCTION -->
+    <section id="intro" class="story-section reveal-on-scroll">
+      <div class="story-content">
+        <span class="story-subtitle">The Mind Behind Chronos</span>
+        <h1 class="story-title">About the Crafter</h1>
+        <p class="creator-label">Creator: Rutwik Vadali</p>
+        <div class="story-text">
+          <p>Chronos was built as a conceptual exploration into mechanical timekeeping. It is a study in how engineering discipline and aesthetic restraint can coexist in perfect balance. This project reflects a deep-seated fascination with the physical intelligence of mechanical systems, where every component exists with absolute intention and purpose.</p>
+          <p>The goal was to create a digital experience that honors the tradition of horology while pushing the boundaries of modern web design. By focusing on the essential, Chronos aims to communicate the quiet confidence and uncompromising quality found in high-end timepieces.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="luxury-divider"></div>
+    <div class="mechanical-motif"></div>
+
+    <!-- SECTION 2: THE IDEA -->
+    <section id="the-idea" class="story-section reveal-on-scroll">
+      <div class="story-content">
+        <span class="story-subtitle">The Vision</span>
+        <h2 class="story-title">The Idea Behind Chronos</h2>
+        <div class="story-text">
+          <p>The concept of Chronos emerged from a simple curiosity: how can the complex, tactile nature of high-end horology be translated into a digital experience? It began as an investigation into mechanical movements—the intricate dance of gears and springs that has defined timekeeping for centuries—and evolved into a digital interpretation of these classical principles.</p>
+          <p>We wanted to capture the essence of what makes a mechanical watch so special: the transparency of its operation, the precision of its assembly, and the timelessness of its design. The result is a platform that celebrates craftsmanship in all its forms, from the physical to the digital.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="luxury-divider"></div>
+    <div class="mechanical-motif"></div>
+
+    <!-- SECTION 3: MECHANICAL FASCINATION -->
+    <section id="mechanical" class="story-section reveal-on-scroll">
+      <div class="story-content">
+        <span class="story-subtitle">Physical Intelligence</span>
+        <h2 class="story-title">Mechanical Fascination</h2>
+        <div class="story-text">
+          <p>Mechanical watches are marvels of energy management. They transform stored potential energy from a wound mainspring into controlled, rhythmic motion. This process involves a series of sophisticated subsystems: gear trains transferring energy through precise ratios, and escapements releasing that energy in exact increments controlled by the balance wheel.</p>
+          <p>This engineering logic—where form is strictly dictated by function—became the primary inspiration for the visual design of Chronos. The website's architecture is built on these same principles of structure, rhythm, and mechanical clarity. Every transition and interaction is designed to feel as intentional as a click of a gear.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="luxury-divider"></div>
+    <div class="mechanical-motif"></div>
+
+    <!-- SECTION 4: DIGITAL CRAFTSMANSHIP -->
+    <section id="craftsmanship" class="story-section reveal-on-scroll">
+      <div class="story-content">
+        <span class="story-subtitle">The Execution</span>
+        <h2 class="story-title">Crafting the Experience</h2>
+        <div class="story-text">
+          <p>Digital craftsmanship, much like its mechanical counterpart, requires a commitment to detail that often goes unnoticed. In the development of Chronos, this meant ensuring that every animation felt weighted and intentional, rather than decorative. The layout follows strict geometric proportions, ensuring a sense of balance across all devices.</p>
+          <p>The experience is designed to unfold as the user explores, mirroring the way a collector might examine a movement through a loupe. By prioritizing performance and fluid motion, the digital interface achieves a level of "mechanical" smoothness that honors the tradition of horology while embracing modern technology.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="luxury-divider"></div>
+    <div class="mechanical-motif"></div>
+
+    <!-- SECTION 5: DESIGN PHILOSOPHY -->
+    <section id="philosophy" class="story-section reveal-on-scroll">
+      <div class="story-content">
+        <span class="story-subtitle">The Principles</span>
+        <h2 class="story-title">Engineering Meets Art</h2>
+        <div class="story-text">
+          <p>The guiding principles behind Chronos are restraint over excess and clarity over complexity. In a world of digital noise, we chose to focus on the essential. This philosophy of "less but better" ensures that the engineering mastery of the timepieces remains the central focus, undisturbed by unnecessary ornamentation.</p>
+          <p>Structure is preferred over decoration. Every line, font choice, and color palette was selected to reinforce the narrative of precision. We believe that true luxury is found in the harmony of well-executed details, where the craftsmanship is so complete that it appears effortless and timeless.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="luxury-divider"></div>
+    <div class="mechanical-motif"></div>
+
+    <!-- SECTION 6: CLOSING -->
+    <section id="closing" class="story-section reveal-on-scroll">
+      <div class="story-content">
+        <span class="story-subtitle">Reflection</span>
+        <h2 class="story-title">Time Reveals Craftsmanship</h2>
+        <div class="story-text">
+          <p>Ultimately, Chronos is more than just a conceptual watch brand; it is a study in engineering discipline and design harmony. It serves as a reminder that even in a digital age, the values of traditional craftsmanship—patience, precision, and purpose—remain as relevant as ever.</p>
+          <p>As you move through this experience, we hope you feel the intentionality behind every second. Chronos is an ongoing exploration of how we perceive time, and how the instruments we use to measure it can themselves be works of art.</p>
+        </div>
+        
+        <a href="https://www.linkedin.com/in/rutwik-vadali/" target="_blank" class="linkedin-link">
+          Connect on LinkedIn
+        </a>
+
+        <div class="back-to-chronos">
+          <a href="index.html" class="back-button">BACK TO CHRONOS</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-logo">CHRONOS</div>
+    <p>© 2026 Chronos Watch Company</p>
+    <p>Precision engineered luxury timepieces.</p>
+  </footer>
+
+  <script src="js/scrollanimations.js"></script>
+  <script>
+    // Reveal animations on scroll
+    const revealElements = document.querySelectorAll('.reveal-on-scroll');
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: "0px 0px -50px 0px"
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    }, observerOptions);
+
+    revealElements.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
